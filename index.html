@@ -2,7 +2,7 @@
 
 <html lang="ru">
 <head>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="256x256" href="/favicon.png"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/favicon.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%2378f66d%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2224%22%20fill%3D%22%23080808%22%2F%3E%3Cpath%20d%3D%22M18%2032l9%209%2020-21%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E"><link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%2378f66d%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2224%22%20fill%3D%22%23080808%22%2F%3E%3Cpath%20d%3D%22M18%2032l9%209%2020-21%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E"><link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%2378f66d%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2224%22%20fill%3D%22%23080808%22%2F%3E%3Cpath%20d%3D%22M18%2032l9%209%2020-21%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E">
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -189,6 +189,57 @@ footer .footer-row{min-height:68px}
 }
 </style>
 <style>.seo-directory{padding:38px 0 44px;background:#f4f7f5}.seo-directory-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.seo-directory-grid a{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px 13px;border:1px solid #dfe8e1;border-radius:12px;background:#fff;font-size:12px;font-weight:650;line-height:1.35}.seo-directory-grid a span{color:#159957;flex:0 0 auto}@media(max-width:1000px){.seo-directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.seo-directory{padding:28px 0}.seo-directory-grid{grid-template-columns:1fr;gap:8px}.seo-directory-grid a{font-size:13px;padding:13px}}</style>
+
+<style id="mobile-header-and-hero-fix">
+@media (max-width:700px) {
+  header .nav {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+  }
+  header .brand-logo {
+    display:flex !important;
+    flex:0 1 auto !important;
+    min-width:0;
+    max-width:none !important;
+  }
+  header .partner.partner-logo {
+    display:flex !important;
+    flex:0 0 auto !important;
+    width:auto !important;
+    min-width:0;
+    margin-left:auto;
+  }
+  header .cross,
+  header .nav > .btn {
+    display:none !important;
+  }
+  header .wordmark-complex {
+    font-size:clamp(16px,4.6vw,19px);
+    letter-spacing:-1px;
+  }
+  header .wordmark-bloknot {
+    font-size:clamp(16px,4.4vw,18px);
+    gap:5px;
+  }
+  header .checkmark {
+    width:18px;
+    height:18px;
+    font-size:12px;
+  }
+
+  /* Purple decorative square is shifted beyond the text area. */
+  .expo-hero .deco-b {
+    right:-58px !important;
+    top:38% !important;
+    width:52px !important;
+    height:52px !important;
+    box-shadow:52px 52px 0 #ffe15b !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap nav">
